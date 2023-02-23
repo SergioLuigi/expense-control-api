@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/V1_0__CREATE_EXTENSION.sql
+  - include:
+      file: db/changelog/V1_1__CREATE_TABLE_EXPENSE_REPEATER.sql
+  - include:
+      file: db/changelog/V1_2__CREATE_TABLE_EXPENSE.sql

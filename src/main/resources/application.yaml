@@ -1,0 +1,16 @@
+server:
+  error:
+    include-message: always
+
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://${POSTGRESQL_HOST}:${POSTGRESQL_PORT}/${POSTGRESQL_DATABASE}
+    username: ${POSTGRESQL_USERNAME}
+    password: ${POSTGRESQL_PASSWORD}
+    pool:
+      enabled: false
+  liquibase:
+    url: jdbc:postgresql://${POSTGRESQL_HOST}:${POSTGRESQL_PORT}/${POSTGRESQL_DATABASE}
+    user: ${POSTGRESQL_USERNAME}
+    password: ${POSTGRESQL_PASSWORD}
+    #driver-class-name:
